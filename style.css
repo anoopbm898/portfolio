@@ -118,3 +118,129 @@ nav ul li a:hover{
 .infobox>span{
     margin-left: 1rem;
 }
+#skills{
+    margin: 15% 8px 0px 8% ;
+ }
+ .subhead{
+   font-size: 20px;
+   color: red;
+ }
+ .skillcontents{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 50px;
+   margin-top: 20px;
+ }
+ .sectionhead{
+    text-align: center;
+ }
+ .skillbars{
+    margin-left: 100px;
+ }
+ 
+ .bars{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   padding: 1rem 0px;
+ } 
+ .barhead, .barpercent{
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .htmlbar{
+    background-color: orange;
+    width: 84%;
+  }
+  .cssbar{
+    background-color: orange;
+    width: 79% ;
+  }
+  .jsbar{
+    background-color: orange;
+    width:70% ;
+  }
+  .reactbar{
+    background-color: orange;
+    width:85% ;
+  }
+  .iconcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+  }
+  .iconcontainer div{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .brand{
+    color: black;
+    font-size: 30px;
+
+  }
+  .iconcontainer div:hover{
+    background-image: linear-gradient(to bottom,red,yellow);
+    animation: rotate 4s ;
+  }
+  @keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+  }
+  .iconcontainer div:hover .brand{
+    color: antiquewhite;
+  }
+  #copy{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .uparrow{
+    float:right ;
+    margin: 0px 30px 60px 0px;
+    font-size: 30px;
+    text-decoration: none;
+
+  }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+  background-color: orange;
+  border-radius: 20px;
+}
+html{
+  scroll-behavior: smooth;
+}
